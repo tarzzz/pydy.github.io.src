@@ -2,10 +2,8 @@
 {% extends "!layout.html" %}
 
 {# Custom CSS overrides #}
-{% set bootswatch_css_custom = ['_static/custom_style.css'] %}
-
+{% set logo = 'logo.jpg' %}
 {% block content %}
 {{ navBar() }}
-<img src="/_static/logo.jpg"></img>
 {{ super() }}
 {% endblock %}
