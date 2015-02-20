@@ -1,0 +1,32 @@
+<div style="display: none;" id="MathJax_Message"></div>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+                
+        <div class="wrapper">
+
+	        <div id="top"><a href="#top" title="Back to top"><i class="icon-arrow-up"></i><span class="visuallyhidden">Back to top</span></a></div>
+        
+	        <header class="header">
+	
+				<div class="container">
+		        	
+		        	<div class="branding">
+                         <p class="site-title">     <a href="www.pydy.org/">{% if theme_navbar_title -%}{{ theme_navbar_title|e }}{%- else -%}{{ project|e }}{%- endif -%}  </a>  {{ version|e }}</p>
+                         	        	
+			        	<ul class="site-authors">
+			        		<li><a href="https://files.nyu.edu/ts43/public">Jason Moore</a></li>
+			        		<li><a href="http://johnstachurski.net/">Dale Lukas</a></li>
+			        	</ul>
+			        	
+		        	</div>
+		        	<nav class="main-nav">
+		        	            {% block navbartoc %}
+              					{% include "globaltoc.html" %}
+              					{% if theme_navbar_pagenav %}
+                					{% include "navbartoc.html" %}
+              					{% endif %}
+            					{% endblock %}
+					</nav>
+				</div>	        	
+	        </header>
